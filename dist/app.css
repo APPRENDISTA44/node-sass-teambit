@@ -1,5 +1,7 @@
 /*larghezza container*/
 
+/*larghezza container responsive*/
+
 /*google_button*/
 
 /* reset */
@@ -15,11 +17,13 @@
 .container {
   margin: auto;
   width: 1200px;
+  max-width: 90%;
 }
 
 /*barra di navigazione*/
 
 nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,14 +49,39 @@ nav ul.menu li {
   font-size: 22px;
 }
 
-nav ul.menu li.btn_google {
+nav ul.menu li.btn {
   background-color: #5b70aa;
   padding: 10px;
   border-radius: 10px;
 }
 
-nav ul.menu li.btn_google img {
+nav ul.menu li.btn img {
   height: 24px;
   vertical-align: middle;
+}
+
+@media (min-width: 992px) {
+  li.burger,
+  li.close,
+  ul.menu_responsive {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  ul.menu li {
+    display: none;
+  }
+
+  ul.menu li.burger {
+    display: block;
+  }
+
+  ul.menu_responsive {
+    top: 100px;
+    position: absolute;
+    display: block;
+    list-style: none;
+  }
 }
 

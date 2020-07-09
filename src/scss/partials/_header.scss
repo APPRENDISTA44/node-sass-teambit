@@ -1,5 +1,6 @@
 /*barra di navigazione*/
 nav{
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,13 +19,34 @@ nav{
       font-weight: bold;
       font-size: 22px;
     }
-    li.btn_google{
-      @include my_google_button;
+    li.btn{
+      @include my_button;
       img{
         height: 24px;
         vertical-align: middle;
       }
     }
-  }
 
+  }
+}
+@media (min-width: $width_responsive){
+  li.burger,
+  li.close,
+  ul.menu_responsive{
+    display: none;
+  }
+}
+@media (max-width: $width_responsive){
+  ul.menu li{
+    display: none;
+  }
+  ul.menu li.burger{
+    display: block;
+  }
+  ul.menu_responsive{
+    top: 100px;
+    position: absolute;
+    display: block;
+    list-style: none;
+  }
 }
