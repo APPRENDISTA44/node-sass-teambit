@@ -1,0 +1,10 @@
+@mixin my_list_inline {
+  list-style: none;
+  display: inline-block;
+}
+/*google_button*/
+@mixin my_google_button {
+  background-color: #5b70aa;
+  padding: 10px;
+  border-radius: 10px;
+}

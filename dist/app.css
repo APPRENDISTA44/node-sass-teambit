@@ -1,0 +1,58 @@
+/*larghezza container*/
+
+/*google_button*/
+
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*container*/
+
+.container {
+  margin: auto;
+  width: 1200px;
+}
+
+/*barra di navigazione*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  /*logo*/
+  /*menu*/
+}
+
+nav img {
+  height: 40px;
+}
+
+nav ul.menu {
+  list-style: none;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+}
+
+nav ul.menu li {
+  margin-left: 22px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+nav ul.menu li.btn_google {
+  background-color: #5b70aa;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+nav ul.menu li.btn_google img {
+  height: 24px;
+  vertical-align: middle;
+}
+

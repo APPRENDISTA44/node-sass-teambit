@@ -1,0 +1,30 @@
+/*barra di navigazione*/
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  /*logo*/
+  img{
+    height: 40px;
+  }
+  /*menu*/
+  ul.menu{
+    @include my_list_inline;
+    display: flex;
+    align-items: center;
+    li{
+      margin-left: 22px;
+      font-weight: bold;
+      font-size: 22px;
+    }
+    li.btn_google{
+      @include my_google_button;
+      img{
+        height: 24px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+}
