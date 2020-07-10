@@ -38,6 +38,7 @@ hr {
 
 nav {
   position: fixed;
+  left: 5%;
   width: 90%;
   margin-top: 20px;
   /*logo*/
