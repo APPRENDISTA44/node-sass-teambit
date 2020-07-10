@@ -10,3 +10,9 @@
   width: $width_container;
   max-width: 90%;
 }
+hr{
+  margin-top: 10px;
+}
+.menu_responsive.active{
+  display: flex;
+}

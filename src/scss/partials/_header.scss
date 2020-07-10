@@ -1,10 +1,11 @@
 /*barra di navigazione*/
+.container_flex{
+  @include my_container_flex
+}
 nav{
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 90px;
+  position: fixed;
+  width: 90%;
+  margin-top: 20px;
   /*logo*/
   img{
     height: 40px;
@@ -16,8 +17,7 @@ nav{
     align-items: center;
     li{
       margin-left: 22px;
-      font-weight: bold;
-      font-size: 22px;
+    @include my_list_style;
     }
     li.btn{
       @include my_button;
@@ -44,9 +44,24 @@ nav{
     display: block;
   }
   ul.menu_responsive{
-    top: 100px;
+    width: 100%;
+    height: 400px;
+    top: 80px;
     position: absolute;
-    display: block;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
     list-style: none;
+    li{
+      @include my_list_style;
+    }
+    li.btn{
+      @include my_button;
+      text-align: center;
+      img{
+        height: 24px;
+        vertical-align: middle;
+      }
+    }
   }
 }

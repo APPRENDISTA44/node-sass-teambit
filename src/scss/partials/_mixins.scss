@@ -2,9 +2,18 @@
   list-style: none;
   display: inline-block;
 }
+@mixin my_list_style{
+  font-weight: bold;
+  font-size: 22px;
+}
 /*google_button*/
 @mixin my_button {
   background-color: #5b70aa;
   padding: 10px;
   border-radius: 10px;
+}
+@mixin my_container_flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

@@ -20,14 +20,26 @@
   max-width: 90%;
 }
 
+hr {
+  margin-top: 10px;
+}
+
+.menu_responsive.active {
+  display: flex;
+}
+
 /*barra di navigazione*/
 
-nav {
-  position: relative;
+.container_flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90px;
+}
+
+nav {
+  position: fixed;
+  width: 90%;
+  margin-top: 20px;
   /*logo*/
   /*menu*/
 }
@@ -78,10 +90,31 @@ nav ul.menu li.btn img {
   }
 
   ul.menu_responsive {
-    top: 100px;
+    width: 100%;
+    height: 400px;
+    top: 80px;
     position: absolute;
-    display: block;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
     list-style: none;
+  }
+
+  ul.menu_responsive li {
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  ul.menu_responsive li.btn {
+    background-color: #5b70aa;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  ul.menu_responsive li.btn img {
+    height: 24px;
+    vertical-align: middle;
   }
 }
 
