@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+
   $(document).on('click','li.burger',
   function () {
     $(this).hide();
@@ -13,5 +14,4 @@ $(document).ready(function () {
     $('li.burger').show();
     $('ul.menu_responsive').removeClass('active')
   });
-
 });

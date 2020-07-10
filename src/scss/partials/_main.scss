@@ -7,7 +7,7 @@
     }
     h3{
       margin-top: 20px;
-      font-size: 40px;
+      font-size: $h3_size;
     }
     p {
       margin-top: 70px;
@@ -27,7 +27,6 @@
     a{
       display: inline-block;
       color: black;
-      text-decoration: none;
       margin-top: 10px;
       font-size: 20px;
     }
@@ -46,16 +45,64 @@
     flex-wrap: wrap;
 
     .testo{
+      text-align: center;
       flex-basis: 100%;
     }
     .immagine{
       flex-basis: 100%;
       padding: 0;
-      img{
-        width: 90%
-     }
+
     }
-
   }
+}
 
+#feedback{
+  display: flex;
+  padding: 0 30px;
+  .immagine{
+    flex-basis: 40%;
+    img{
+      width: 100%
+   }
+  }
+  .testo{
+    flex-basis: 60%;
+    h4{
+      font-size: $h4_size;
+      width: 30%;
+      margin-bottom: 60px;
+    }
+    p{
+      width: 35%;
+      font-size: $p_size;
+    }
+    a{
+      display: block;
+      margin: 25px 0;
+      font-size: $p_size;
+    }
+    img{
+      width: 45%;
+    }
+  }
+}
+@media (max-width: $width_responsive){
+  #feedback{
+    flex-wrap: wrap;
+
+    .testo{
+      flex-basis: 100%;
+      text-align: center;
+      h4{
+        width: 100%;
+      }
+      p{
+        width: 100%;
+      }
+
+    }
+    .immagine{
+      flex-basis: 100%;
+    }
+  }
 }
